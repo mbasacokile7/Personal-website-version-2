@@ -81,6 +81,36 @@ html {
   transform: translateY(-2px);
 }
 
+.project-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.625rem 1.25rem;
+  border: 1px solid #374151;
+  border-radius: 0.125rem;
+  color: #9ca3af;
+  text-decoration: none;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  font-size: 0.875rem;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  flex: 1;
+  justify-content: center;
+}
+
+.project-link:hover {
+  background-color: #ffffff;
+  color: #000000;
+  border-color: #ffffff;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 640px) {
+  .project-link {
+    width: 100%;
+  }
+}
+
 @keyframes fadeInUp {
   from {
     opacity: 0;
